@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h2>Extracted Skills</h2>
+    <p>{{ skills }}</p>
+
+    <h2>Recommended Jobs</h2>
+    <ul>
+        {% for job in jobs %}
+            <li>{{ job | safe }}</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/">Upload Another Resume</a>
+</body>
+</html>
